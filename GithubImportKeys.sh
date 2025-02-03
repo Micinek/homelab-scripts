@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Write your Github Username from which you want to import keys:"
-
 # GitHub username to fetch keys
-read GITHUB_USER
+read -p "Write your Github Username from which you want to import keys: " GITHUB_USER
+
+GITHUB_USER=${1:-$GITHUB_USER}
 
 # Check if sudo is present
 if command -v sudo &>/dev/null; then
