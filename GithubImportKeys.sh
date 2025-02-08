@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# You can run this script without downloading it with this one-liner ( edit your username at the end )
+# curl -s https://raw.githubusercontent.com/Micinek/homelab-scripts/refs/heads/main/GithubImportKeys.sh | bash -s -- Micinek
+
 # GitHub username to fetch keys
 GITHUB_USER="${1:-$(read -p 'Enter GitHub username: ' input; echo $input)}"
 
